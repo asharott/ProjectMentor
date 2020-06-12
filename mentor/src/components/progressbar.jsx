@@ -1,29 +1,19 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
-class ProgressBar extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      currentStep: 1,
-    };
-  }
+const ProgressBar = (props) => {
+  const [percentage, setPercentage] = useState(0);
 
-  handleSteps = () => {
-    this.setState({ currentStep: this.state.currentStep + 1 });
-  };
-  render() {
-    return (
-      <div>
-        <div className="StepDotsContainer">
-          <div className="stepdot step1"></div>
-          <div className="stepdot step2"></div>
-          <div className="stepdot step3"></div>
-        </div>
-
-        <button onClick={this.handleSteps}>Next Step</button>
-      </div>
-    );
-  }
-}
+  return (
+    <div className="progress-bar">
+      <div className="filler" style={{ width: percentage + "%" }}></div>;
+      <button
+        style={{ margin: 10 }}
+        onClick={() => setPercentage(percentage + 20)}
+      >
+        Next step
+      </button>
+    </div>
+  );
+};
 
 export default ProgressBar;

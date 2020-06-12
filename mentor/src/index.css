@@ -1,16 +1,13 @@
-.StepDotsContainer {
-  width: 300px;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
+.progress-bar {
+  position: relative;
+  height: 20px;
+  width: 350px;
+  border-radius: 50px;
+  border: 1px solid #333;
 }
 
-.stepdot {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  background-color: gray;
+.filler {
+  background: #1da598;
+  height: 100%;
+  border-radius: inherit;
 }
-
-

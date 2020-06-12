@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import ProgressBar from "./components/progressbar";
+import ProgressBar from "./components/ProgressBar";
 
 function App() {
   return (
