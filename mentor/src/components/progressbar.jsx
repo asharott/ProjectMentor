@@ -1,15 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { ProgressContext } from "../contexts/ProgressContext";
 
 const ProgressBar = (props) => {
-  const [percentage, setPercentage] = useState(0);
-
+  const { percentage, increasePercentage } = useContext(ProgressContext);
   return (
     <div className="progress-bar">
       <div className="filler" style={{ width: percentage + "%" }}></div>
-      <button
-        style={{ margin: 10 }}
-        onClick={() => setPercentage(percentage + 20)}
-      >
+      <button style={{ margin: 10 }} onClick={() => increasePercentage()}>
         Next step
       </button>
     </div>
