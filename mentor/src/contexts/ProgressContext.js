@@ -5,7 +5,9 @@ export const ProgressContext = createContext();
 const ProgressContextProvider = (props) => {
   const [percentage, setPercentage] = useState(0);
   const increasePercentage = () => {
-    setPercentage(percentage + 20);
+    if (percentage < 100) {
+      setPercentage(percentage + 20);
+    }
   };
   return (
     <ProgressContext.Provider value={{ percentage, increasePercentage }}>
