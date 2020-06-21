@@ -3,6 +3,7 @@ import "./index.css";
 import ProgressBar from "./components/ProgressBar";
 import ProgressContextProvider from "./contexts/ProgressContext";
 import NextStepButton from "../src/components/NextStepButton";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <ProgressContextProvider>
         <ProgressBar />
         <NextStepButton />
+        <Form></Form>
       </ProgressContextProvider>
     </div>
   );
