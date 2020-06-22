@@ -6,7 +6,7 @@ const ProgressContextProvider = (props) => {
   const [percentage, setPercentage] = useState(0);
   const increasePercentage = () => {
     if (percentage < 100) {
-      setPercentage(percentage + 20);
+      setPercentage(percentage + 10);
     }
   };
   return (

@@ -11,7 +11,7 @@ function App() {
       <ProgressContextProvider>
         <ProgressBar />
         <NextStepButton />
-        <Form></Form>
+        <Form/>
       </ProgressContextProvider>
     </div>
   );

@@ -1,11 +1,10 @@
 import React from "react";
 import { useContext } from "react";
 import { ProgressContext } from "../contexts/ProgressContext";
-import { useEffect } from "react";
 
 const Form = (props) => {
   const percentage = useContext(ProgressContext);
-  const renderSwitch = (percentage) => {
+  const renderSwitch = () => {
     switch (percentage) {
       case percentage > 20:
         return "bar";

@@ -5,6 +5,8 @@ const ProgressBar = (props) => {
   const { percentage } = useContext(ProgressContext);
   return (
     <div>
+      <div>{percentage} %</div>
+
       <div className="progress-bar">
         <div className="filler" style={{ width: percentage + "%" }}></div>
       </div>
