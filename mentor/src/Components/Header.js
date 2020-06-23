@@ -1,35 +1,17 @@
 import React from "react";
-import profilepic from "../Assets/ProfilePic.png";
-import Loupe from "../Assets/Loupe.png";
+import ProfilePic from "./ProfilePic";
+import Username from "./Username";
+import SearchBar from "./SearchBar";
+import BurgerMenu from "./BurgerMenu";
 
 const Header = (props) => {
   return (
     <div className="headerContainer">
       <div className="headerContent">
-        <div className="toCenterProfilePic">
-          <img src={profilepic} className="profilePic" alt="profile pic" />
-        </div>
-        <div className="toCenterName">
-          <span>Nom</span>
-        </div>
-        <div className="toCenterSearchBar">
-          <input
-            type="text"
-            className="searchBar"
-            style={{
-              backgroundImage: "url(" + Loupe + ")",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "95%",
-            }}
-          />
-        </div>
-        <div className="toCenterBurger">
-          <ul className="burgerMenu">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
+        <ProfilePic />
+        <Username />
+        <SearchBar />
+        <BurgerMenu />
       </div>
     </div>
   );
