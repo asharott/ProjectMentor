@@ -10,7 +10,7 @@ const SearchBar = (props) => {
         style={{
           backgroundImage: "url(" + Loupe + ")",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "95%",
+          backgroundPosition: "90%",
         }}
       />
     </div>
