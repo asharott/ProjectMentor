@@ -6,6 +6,7 @@ const CoverPicture = (props) => {
     <div>
       <div className="blank"></div>
       <img className="coverPicture" src={CoverPic} alt='cover'>
+        
       </img>
     </div>
   );

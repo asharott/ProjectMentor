@@ -8,8 +8,10 @@ const Header = (props) => {
   return (
     <div className="headerContainer">
       <div className="headerContent">
-        <ProfilePic />
-        <Username />
+        <div className="headerUser">
+          <ProfilePic />
+          <Username />
+        </div>
         <SearchBar />
         <BurgerMenu />
       </div>

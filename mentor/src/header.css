@@ -8,11 +8,14 @@
 }
 
 .headerContent {
-  width: fit-content;
   height: inherit;
   display: flex;
   margin-right: 0;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.headerUser{
+  display: flex;
 }
 
 .profilePic {

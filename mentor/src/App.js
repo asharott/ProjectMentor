@@ -11,6 +11,7 @@ import MentoringType from "./Components/MentoringType";
 import MeetingType from "./Components/MeetingType";
 import Experience from "./Components/Experience";
 import Opinion from "./Components/Opinions";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <MeetingType />
       <Experience />
       <Opinion />
+      <Contact />
     </div>
   );
 }
