@@ -1,0 +1,29 @@
+.skillsTitle {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.skillsSection {
+  margin-top: 10px;
+}
+
+.skillsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+.skillsContainer div {
+  color: white;
+  height: 20px;
+  background-color: #4f4f4f;
+  padding: 10px 10px 10px 10px;
+  border-radius: 25px;
+  text-align: center;
+  width: fit-content;
+  line-height: 20px;
+  margin: 12px 10px 0px 0px;
+}

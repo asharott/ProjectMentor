@@ -1,7 +1,5 @@
 import React from "react";
-import "./reset.scss";
-import "./header.scss";
-import "./main.scss";
+import "./Styles.scss";
 import Header from "./Components/Header";
 import CoverPicture from "./Components/CoverPicture";
 import Infos from "./Components/Infos";
