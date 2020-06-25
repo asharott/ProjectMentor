@@ -22,20 +22,20 @@
   margin-left: 9px;
 }
 
-.toCenterProfilePic {
+.profilePicContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.toCenterName {
+.nameContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-weight: bold;
 }
 
-.toCenterSearchBar {
+.searchBarContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +51,7 @@
   padding-right: 10vw;
 }
 
-.toCenterBurger {
+.burgerContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;

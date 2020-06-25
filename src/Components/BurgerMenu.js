@@ -2,7 +2,7 @@ import React from "react";
 
 const BurgerMenu = (props) => {
   return (
-      <div className="toCenterBurger">
+      <div className="burgerContainer">
         <ul className="burgerMenu">
           <li />
           <li />

@@ -2,7 +2,7 @@ import React from "react";
 
 const Username = (props) => {
   return (
-    <div className="toCenterName">
+    <div className="nameContainer">
       <span>Nom</span>
     </div>
   );

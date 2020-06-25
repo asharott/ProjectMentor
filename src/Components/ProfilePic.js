@@ -3,7 +3,7 @@ import profilepic from "../Assets/ProfilePic.png";
 
 const ProfilePic = (props) => {
   return (
-    <div className="toCenterProfilePic">
+    <div className="profilePicContainer">
       <img src={profilepic} className="profilePic" alt="profile pic" />
     </div>
   );

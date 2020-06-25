@@ -3,7 +3,7 @@ import Loupe from "../Assets/Loupe.png";
 
 const SearchBar = (props) => {
   return (
-    <div className="toCenterSearchBar">
+    <div className="searchBarContainer">
       <input
         type="text"
         className="searchBar"
