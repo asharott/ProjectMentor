@@ -7,6 +7,10 @@
   height: 70px;
 }
 
+.spacer {
+  height: 80px;
+}
+
 .coverPicture {
   background-color: red;
   height: 230px;
@@ -137,6 +141,8 @@
   color: #4f4f4f;
 }
 
+/*CONTACT*/
+
 .contactSection {
   position: fixed;
   bottom: 0px;
@@ -145,16 +151,69 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.contactButtonContainer {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .contactButton {
+  width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 15px 30% 15px 30%;
+  padding: 15px 0% 15px 0%;
   border: none;
   background: linear-gradient(270deg, #0175fb 0%, #488fe0 98.44%);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contactSectionExpanded {
+  position: fixed;
+  bottom: 0px;
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.contactMailContainer {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contactMailContainer p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.closeButtonContainer {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.closeButton {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 0% 15px 0%;
+  border: none;
+  background: linear-gradient(270deg, #ff686e 0%, #f88b90 98.44%);
   color: white;
   font-size: 18px;
   font-weight: bold;

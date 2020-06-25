@@ -18,6 +18,7 @@ const Opinion = (props) => {
       <Comment name="Morgane" />
       <Comment name="Lucas" />
       <Comment name="Maxime" />
+      <div className="spacer"></div>
     </div>
   );
 };
