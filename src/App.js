@@ -10,6 +10,7 @@ import MeetingType from "./Components/MeetingType";
 import Experience from "./Components/Experience";
 import Opinion from "./Components/Opinions";
 import Contact from "./Components/Contact";
+import Testfetch from "./Components/Testfetch";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Infos />
       <Skills />
       <Resume />
+      <Testfetch />
       <MentoringType />
       <MeetingType />
       <Experience />
