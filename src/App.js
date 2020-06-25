@@ -1,7 +1,7 @@
 import React from "react";
-import "./reset.css";
-import "./header.css";
-import "./main.css";
+import "./reset.scss";
+import "./header.scss";
+import "./main.scss";
 import Header from "./Components/Header";
 import CoverPicture from "./Components/CoverPicture";
 import Infos from "./Components/Infos";
