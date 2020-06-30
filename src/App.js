@@ -11,21 +11,24 @@ import Experience from "./Components/Experience";
 import Opinion from "./Components/Opinions";
 import Contact from "./Components/Contact";
 import Testfetch from "./Components/Testfetch";
+import ProfileContextProvider from "./Contexts/ProfileContext";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <CoverPicture />
-      <Infos />
-      <Skills />
-      <Resume />
-      <Testfetch />
-      <MentoringType />
-      <MeetingType />
-      <Experience />
-      <Opinion />
-      <Contact />
+      <ProfileContextProvider>
+        <Header />
+        <CoverPicture />
+        <Infos />
+        <Skills />
+        <Resume />
+        <Testfetch />
+        <MentoringType />
+        <MeetingType />
+        <Experience />
+        <Opinion />
+        <Contact />
+      </ProfileContextProvider>
     </div>
   );
 }
