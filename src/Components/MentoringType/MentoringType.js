@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as GroupMentoring } from "../Assets/GroupMentoring.svg";
-import { ReactComponent as SoloMentoringGray } from "../Assets/SoloMentoringGray.svg";
+import { ReactComponent as GroupMentoring } from "./Assets/GroupMentoring.svg";
+import { ReactComponent as SoloMentoringGray } from "./Assets/SoloMentoringGray.svg";
 
 const MentoringType = (props) => {
   return (

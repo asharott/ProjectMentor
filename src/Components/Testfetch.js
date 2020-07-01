@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Testfetch = (props) => {
   fetch("http://localhost:8000/api/post")

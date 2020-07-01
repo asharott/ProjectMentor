@@ -1,15 +1,15 @@
 import React from "react";
 import "./Styles.scss";
-import Header from "./Components/Header";
-import CoverPicture from "./Components/CoverPicture";
-import Infos from "./Components/Infos";
-import Skills from "./Components/Skills";
-import Resume from "./Components/Resume";
-import MentoringType from "./Components/MentoringType";
-import MeetingType from "./Components/MeetingType";
-import Experience from "./Components/Experience";
-import Opinion from "./Components/Opinions";
-import Contact from "./Components/Contact";
+import Header from "./Components/Header/Header";
+import CoverPicture from "./Components/CoverPicture/CoverPicture";
+import Infos from "./Components/Infos/Infos";
+import Skills from "./Components/Skills/Skills";
+import Resume from "./Components/Resume/Resume";
+import MentoringType from "./Components/MentoringType/MentoringType";
+import MeetingType from "./Components/MeetingType/MeetingType";
+import Experience from "./Components/Experience/Experience";
+import Opinion from "./Components/Opinions/Opinions";
+import Contact from "./Components/Contact/Contact";
 import Testfetch from "./Components/Testfetch";
 import ProfileContextProvider from "./Contexts/ProfileContext";
 

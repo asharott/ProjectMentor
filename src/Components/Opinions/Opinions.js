@@ -9,10 +9,7 @@ const Opinion = (props) => {
       <p className="disclaimer">
         Toutes nos évaluations sont collectées par nos services et sont fiables
         à 100%. Elles correspondent à une vraie expérience vécue par les élèves
-        du professeur.{" "}
-        <span role="image" aria-label="Tick">
-          ✅
-        </span>
+        du professeur.
       </p>
       <Comment name="Paul" />
       <Comment name="Morgane" />

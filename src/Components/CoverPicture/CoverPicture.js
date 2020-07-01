@@ -1,5 +1,5 @@
 import React from "react";
-import CoverPic from "../Assets/Hinata.jpg";
+import CoverPic from "./Assets/Hinata.jpg";
 
 const CoverPicture = (props) => {
   return (

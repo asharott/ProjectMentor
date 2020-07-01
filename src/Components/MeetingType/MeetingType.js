@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as Webcam } from "../Assets/Webcam.svg";
-import { ReactComponent as FaceToFace } from "../Assets/Facetoface.svg";
+import { ReactComponent as Webcam } from "./Assets/Webcam.svg";
+import { ReactComponent as FaceToFace } from "./Assets/Facetoface.svg";
 
 const MeetingType = (props) => {
   return (

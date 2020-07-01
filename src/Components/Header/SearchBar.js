@@ -1,5 +1,5 @@
 import React from "react";
-import Loupe from "../Assets/Loupe.png";
+import Loupe from "./Assets/Loupe.png";
 
 const SearchBar = (props) => {
   return (
