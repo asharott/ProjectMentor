@@ -1,7 +1,49 @@
+/* sbs == step by step  */
+
+.sbsHeader {
+  display: flex;
+  width: inherit;
+  justify-content: space-evenly;
+  height: 70px;
+  border-bottom: solid 1px #e0e1dd;
+  position: fixed;
+  width: 100%;
+}
+
+.profilePicContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.progressBarSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+.progressBarContainer {
+  display: flex;
+  span {
+    color: #0175fb;
+  }
+}
+
+.progressBarWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+}
+
 .progress-bar {
   position: relative;
+  display: flex;
   height: 4px;
-  width: 350px;
+  width: 100%;
   border-radius: 50px;
   background: #e0e1dd;
 }

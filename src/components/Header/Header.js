@@ -1,9 +1,11 @@
 import React from "react";
 import ProgressBar from "./progressbar";
+import ProfilePic from "./ProfilePic";
 
 const Header = (props) => {
   return (
-    <div>
+    <div className="sbsHeader">
+      <ProfilePic />
       <ProgressBar />
     </div>
   );
