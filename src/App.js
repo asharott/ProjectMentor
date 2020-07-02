@@ -1,17 +1,13 @@
 import React from "react";
-import "./index.css";
-import ProgressBar from "./components/ProgressBar";
+import "./index.scss";
 import ProgressContextProvider from "./contexts/ProgressContext";
-import NextStepButton from "../src/components/NextStepButton";
-import Form from "./components/Form";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <div className="App">
       <ProgressContextProvider>
-        <ProgressBar />
-        <NextStepButton />
-        <Form/>
+        <Header />
       </ProgressContextProvider>
     </div>
   );
