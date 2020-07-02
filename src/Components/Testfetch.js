@@ -4,7 +4,7 @@ const Testfetch = (props) => {
   fetch("http://localhost:8000/api/post")
     .then((response) => response.json())
     .then((data) => console.log(data));
-  return <div></div>;
+  return "";
 };
 
 export default Testfetch;
