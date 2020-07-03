@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
+import NextButton from "../NextButton/NextButton";
 
 const Page9 = (props) => {
-  return ( <div></div> );
-}
- 
+  return (
+    <div>
+      <NextButton />
+    </div>
+  );
+};
+
 export default Page9;

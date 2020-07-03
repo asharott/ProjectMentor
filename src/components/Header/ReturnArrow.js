@@ -6,7 +6,7 @@ const ReturnArrow = (props) => {
   const { decreasePercentage } = useContext(ProgressContext);
   return (
     <div className="returnArrowContainer">
-      <img src={returnArrow} onClick={() => decreasePercentage()} />
+      <img src={returnArrow} onClick={() => decreasePercentage()} alt="back" />
     </div>
   );
 };
