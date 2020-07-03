@@ -3,7 +3,7 @@ import React, { createContext, useState } from "react";
 export const ProgressContext = createContext();
 
 const ProgressContextProvider = (props) => {
-  const [percentage, setPercentage] = useState(60);
+  const [percentage, setPercentage] = useState(100);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [job, setJob] = useState("");
