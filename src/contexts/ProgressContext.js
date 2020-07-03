@@ -8,6 +8,7 @@ const ProgressContextProvider = (props) => {
   const [lastName, setLastName] = useState("");
   const [job, setJob] = useState("");
   const [adress, setAdress] = useState("");
+  const [resume, setResume] = useState("");
 
   const increasePercentage = () => {
     if (percentage < 100) {
@@ -33,6 +34,8 @@ const ProgressContextProvider = (props) => {
         setJob,
         adress,
         setAdress,
+        resume,
+        setResume,
       }}
     >
       {props.children}
