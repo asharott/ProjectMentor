@@ -2,17 +2,17 @@ import React, { useContext } from "react";
 import NextButton from "../NextButton/NextButton";
 import { ProgressContext } from "../../contexts/ProgressContext";
 
-const Page2 = (props) => {
+const Page3 = (props) => {
   const Data = useContext(ProgressContext);
+  console.log(Data.job)
   return (
     <div>
-      <div className="pageTwoContent">
-        <h2>Super un.e nouveau.elle {Data.job} </h2>
-        <h3>Optionnel : Ajoutez des compétences associées </h3>
+      <div className="pageThreeContent">
+        <h2>Depuis combien de temps êtes vous {Data.job} ?</h2>
       </div>
       <NextButton />
     </div>
   );
 };
 
-export default Page2;
+export default Page3;

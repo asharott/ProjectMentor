@@ -10,6 +10,7 @@ const Page1 = (props) => {
       <div className="jobSearchSection">
         <h2>Quel est votre métier ?</h2>
         <input
+          required
           type="search"
           className="jobSearchBar"
           placeholder="Rentrez votre métier."

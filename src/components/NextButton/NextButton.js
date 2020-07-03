@@ -5,7 +5,11 @@ const NextButton = (props) => {
   const { increasePercentage } = useContext(ProgressContext);
   return (
     <div className="nextButtonContainer">
-      <button className="nextButton" onClick={() => increasePercentage()}>
+      <button
+        type="submit"
+        className="nextButton"
+        onClick={() => increasePercentage()}
+      >
         Continuer
       </button>
     </div>

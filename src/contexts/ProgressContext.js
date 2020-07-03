@@ -13,11 +13,17 @@ const ProgressContextProvider = (props) => {
       setPercentage(percentage + 10);
     }
   };
+  const decreasePercentage = () => {
+    if (percentage > 10) {
+      setPercentage(percentage - 10);
+    }
+  };
   return (
     <ProgressContext.Provider
       value={{
         percentage,
         increasePercentage,
+        decreasePercentage,
         firstName,
         setFirstName,
         lastName,
