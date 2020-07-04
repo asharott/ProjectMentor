@@ -4,22 +4,16 @@ export const ProfileContext = createContext();
 
 const ProfileContextProvider = (props) => {
 
-  const [posts, setPosts] = useState([]);
+  let [posts, setPosts] = useState([""]);
   
-    fetch("http://localhost:8000/apip/posts/351")
+    fetch("http://localhost:8000/apip/posts/401")
       .then((response) => response.json())
       .then(
-        (data) =>  { 
-        setPosts(data.note);
-       
-        },
-        
-        console.log(posts)
+        (data) =>  
+          setPosts(posts = data.note)
       )      
-      
-      const rating = posts.note;
     return (
-      <ProfileContext.Provider value={ rating }>
+      <ProfileContext.Provider value={ posts }>
         {props.children}
       </ProfileContext.Provider>
     );

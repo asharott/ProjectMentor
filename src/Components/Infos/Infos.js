@@ -9,7 +9,8 @@ import { ProfileContext } from "../../Contexts/ProfileContext";
 
 const Infos = (props) => {
   const rating = useContext(ProfileContext);
-  const handleStars = ({ rating }) => {
+  console.log(rating);
+  const handleStars = ( rating ) => {
     if (rating === 1) {
       return <Star1 />;
     } else {
