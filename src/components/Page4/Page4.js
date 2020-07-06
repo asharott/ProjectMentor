@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import NextButton from "../NextButton/NextButton";
 import { ReactComponent as Solo } from "./Assets/Solo.svg";
 import { ReactComponent as Group } from "./Assets/Group.svg";
+import { ProgressContext } from "../../contexts/ProgressContext";
 
 const Page4 = (props) => {
+  const {mentoringType, setMentoringType} = useContext(ProgressContext)
+  const handleMentoringType = () => {
+    
+  }
   return (
     <div>
       <div className="pageFourContent">

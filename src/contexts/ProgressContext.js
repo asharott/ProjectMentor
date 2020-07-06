@@ -3,12 +3,15 @@ import React, { createContext, useState } from "react";
 export const ProgressContext = createContext();
 
 const ProgressContextProvider = (props) => {
-  const [percentage, setPercentage] = useState(50);
+  const [percentage, setPercentage] = useState(40);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [job, setJob] = useState("");
   const [adress, setAdress] = useState("");
   const [resume, setResume] = useState("");
+  const [experience, setExperience] = useState(0);
+  const [mentoringType, setMentoringType] = useState(0);
+  const [meetingType, setMeetingType] = useState(0);
 
   const increasePercentage = () => {
     if (percentage < 100) {
@@ -36,6 +39,12 @@ const ProgressContextProvider = (props) => {
         setAdress,
         resume,
         setResume,
+        experience,
+        setExperience,
+        mentoringType,
+        setMentoringType,
+        meetingType,
+        setMeetingType,
       }}
     >
       {props.children}
