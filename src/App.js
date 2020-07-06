@@ -10,7 +10,6 @@ import MeetingType from "./Components/MeetingType/MeetingType";
 import Experience from "./Components/Experience/Experience";
 import Opinion from "./Components/Opinions/Opinions";
 import Contact from "./Components/Contact/Contact";
-import Testfetch from "./Components/Testfetch";
 import ProfileContextProvider from "./Contexts/ProfileContext";
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
         <Infos />
         <Skills />
         <Resume />
-        <Testfetch />
         <MentoringType />
         <MeetingType />
         <Experience />

@@ -4,16 +4,32 @@ export const ProfileContext = createContext();
 
 const ProfileContextProvider = (props) => {
 
-  let [posts, setPosts] = useState([""]);
+  let [note, setNote] = useState("");
+  let [firstName, setFirstName] = useState("");
+  let [lastName, setLastName] = useState("");
+  let [jobTitle, setJobTitle] = useState("");
+  let [city, setCity] = useState("");
+  let [competences, setCompetences] = useState([]);
+  let [parcours, setParcours] = useState("");
+  let [email, setEmail] = useState("");
   
-    fetch("http://localhost:8000/apip/posts/401")
+    fetch("http://localhost:8000/apip/posts/451")
       .then((response) => response.json())
       .then(
-        (data) =>  
-          setPosts(posts = data.note)
-      )      
+        (data) =>
+        {  
+          setNote(note = data.note)
+          setFirstName(firstName = data.firstName)
+          setLastName(lastName = data.lastName)
+          setJobTitle(jobTitle = data.jobTitle)
+          setCity(city = data.city)
+          setCompetences(competences= data.competences)
+          setParcours(parcours= data.course)
+          setEmail(email = data.email)
+        }
+      )
     return (
-      <ProfileContext.Provider value={ posts }>
+      <ProfileContext.Provider value={ {note , firstName, lastName, jobTitle, city, competences, parcours, email} }>
         {props.children}
       </ProfileContext.Provider>
     );
