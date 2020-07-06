@@ -3,7 +3,7 @@ import NextButton from "../NextButton/NextButton";
 import { ProgressContext } from "../../contexts/ProgressContext";
 
 const Page6 = (props) => {
-  const { setAdress } = useContext(ProgressContext);
+  const { setCity } = useContext(ProgressContext);
   return (
     <div>
       <div className="pageSixContent">
@@ -11,7 +11,7 @@ const Page6 = (props) => {
         <input
           type="text"
           placeholder="Montreuil, Paris ..."
-          onChange={(event) => setAdress(event.target.value)}
+          onChange={(event) => setCity(event.target.value)}
         />
       </div>
       <NextButton />

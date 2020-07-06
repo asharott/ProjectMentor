@@ -7,7 +7,7 @@ const ProgressContextProvider = (props) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [job, setJob] = useState("");
-  const [adress, setAdress] = useState("");
+  const [city, setCity] = useState("");
   const [resume, setResume] = useState("");
   const [experience, setExperience] = useState(0);
   const [mentoringType, setMentoringType] = useState(0);
@@ -35,8 +35,8 @@ const ProgressContextProvider = (props) => {
         setLastName,
         job,
         setJob,
-        adress,
-        setAdress,
+        city,
+        setCity,
         resume,
         setResume,
         experience,
