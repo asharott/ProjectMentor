@@ -8,7 +8,9 @@ const NextButton = (props) => {
       <button
         type="submit"
         className="nextButton"
-        onClick={() => increasePercentage()}
+        onClick={() => {
+          increasePercentage();
+        }}
       >
         Continuer
       </button>

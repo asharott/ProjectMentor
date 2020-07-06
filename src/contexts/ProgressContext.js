@@ -12,6 +12,7 @@ const ProgressContextProvider = (props) => {
   const [experience, setExperience] = useState(0);
   const [mentoringType, setMentoringType] = useState(0);
   const [meetingType, setMeetingType] = useState(0);
+  const [skills, setSkills] = useState([""]);
 
   const increasePercentage = () => {
     if (percentage < 100) {
@@ -45,6 +46,8 @@ const ProgressContextProvider = (props) => {
         setMentoringType,
         meetingType,
         setMeetingType,
+        skills,
+        setSkills,
       }}
     >
       {props.children}

@@ -3,24 +3,48 @@ import NextButton from "../NextButton/NextButton";
 import { ProgressContext } from "../../contexts/ProgressContext";
 
 const Page2 = (props) => {
-  const Data = useContext(ProgressContext);
+  const { job, setSkills, increasePercentage } = useContext(ProgressContext);
+  let tempSkills = [];
+  const handleSkills = (event) => {
+    tempSkills.push(event.target.innerText);
+    console.log(tempSkills);
+  };
+  const checkSkill = (event) => {
+    if (tempSkills.indexOf(event.target.innerText) === -1) {
+      handleSkills(event);
+      event.target.style.backgroundColor = "#4f4f4f";
+    } else {
+      tempSkills.splice(tempSkills.indexOf(event.target.innerText), 1);
+      event.target.style.backgroundColor = "#bdbdbd";
+      console.log(tempSkills);
+    }
+  };
+
   return (
     <div>
       <div className="pageTwoContent">
-        <h2>Super un.e nouveau.elle {Data.job} </h2>
+        <h2>Super un.e nouveau.elle {job} </h2>
         <h3>Optionnel : Ajoutez des compétences associées </h3>
-        <section>
-          <ul className="skillsList">
-            <li>Figma</li>
-            <li>Atomic Design</li>
-            <li>Sketch</li>
-            <li>Photoshop</li>
-            <li>UX Design</li>
-            <li>Lightroom</li>
-          </ul>
+        <section className="skillsContainer">
+          <div onClick={(event) => checkSkill(event)}>Figma</div>
+          <div onClick={(event) => checkSkill(event)}>Atomic Design</div>
+          <div onClick={(event) => checkSkill(event)}>Sketch</div>
+          <div onClick={(event) => checkSkill(event)}>Photoshop</div>
+          <div onClick={(event) => checkSkill(event)}>UX Design</div>
+          <div onClick={(event) => checkSkill(event)}>Lightroom</div>
         </section>
       </div>
-      <NextButton />
+      <div className="skillsButtonContainer">
+        <button
+          className="skillsButton"
+          onClick={() => {
+            setSkills(tempSkills);
+            increasePercentage();
+          }}
+        >
+          Continuer
+        </button>
+      </div>
     </div>
   );
 };
