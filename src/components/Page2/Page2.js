@@ -9,6 +9,16 @@ const Page2 = (props) => {
       <div className="pageTwoContent">
         <h2>Super un.e nouveau.elle {Data.job} </h2>
         <h3>Optionnel : Ajoutez des compétences associées </h3>
+        <section>
+          <ul className="skillsList">
+            <li>Figma</li>
+            <li>Atomic Design</li>
+            <li>Sketch</li>
+            <li>Photoshop</li>
+            <li>UX Design</li>
+            <li>Lightroom</li>
+          </ul>
+        </section>
       </div>
       <NextButton />
     </div>
