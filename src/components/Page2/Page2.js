@@ -7,7 +7,6 @@ const Page2 = (props) => {
   let tempSkills = [];
   const handleSkills = (event) => {
     tempSkills.push(event.target.innerText);
-    console.log(tempSkills);
   };
   const checkSkill = (event) => {
     if (tempSkills.indexOf(event.target.innerText) === -1) {
@@ -16,7 +15,6 @@ const Page2 = (props) => {
     } else {
       tempSkills.splice(tempSkills.indexOf(event.target.innerText), 1);
       event.target.style.backgroundColor = "#bdbdbd";
-      console.log(tempSkills);
     }
   };
 
