@@ -8,18 +8,18 @@ import { ReactComponent as Star5 } from "./Assets/5.svg";
 import { ProfileContext } from "../../Contexts/ProfileContext";
 
 const Infos = (props) => {
-  const rating = useContext(ProfileContext);
-  const handleStars = ({ rating }) => {
-    if (rating === 1) {
+  const {note, firstName, lastName, jobTitle, city} = useContext(ProfileContext);
+  const handleStars = ( rating ) => {
+    if (note === 1) {
       return <Star1 />;
     } else {
-      if (rating === 2) {
+      if (note === 2) {
         return <Star2 />;
       } else {
-        if (rating === 3) {
+        if (note === 3) {
           return <Star3 />;
         } else {
-          if (rating === 4) {
+          if (note === 4) {
             return <Star4 />;
           } else {
             return <Star5 />;
@@ -30,13 +30,13 @@ const Infos = (props) => {
   };
   return (
     <div className="infosContainer">
-      <span className="FullName">Vincent Descamps</span>
-      <span className="Speciality">Product Designer</span>
+      <span className="FullName">{firstName} {lastName}</span>
+      <span className="Speciality">{jobTitle}</span>
       <div className="localisationContainer">
         <Pin2 />
-        <span className="Localisation">Paris</span>
+      <span className="Localisation">{city}</span>
       </div>
-      <div className="ratingStars">{handleStars(rating)}</div>
+      <div className="ratingStars">{handleStars(note)}</div>
     </div>
   );
 };
