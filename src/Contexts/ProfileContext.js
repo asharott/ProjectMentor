@@ -16,7 +16,7 @@ const ProfileContextProvider = (props) => {
   let [commentContent, setCommentContent] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/apip/posts/451")
+    fetch("http://localhost:8000/apip/posts/101")
       .then((response) => response.json())
       .then((data) => {
         setNote(data.note);
