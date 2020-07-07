@@ -1,0 +1,32 @@
+.infosContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.FullName {
+  font-weight: bolder;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.Speciality {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.localisationContainer {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.Localisation {
+  margin-left: 5px;
+}
+
+.ratingStars {
+  margin-left: 10px;
+  margin-top: 10px;
+}
