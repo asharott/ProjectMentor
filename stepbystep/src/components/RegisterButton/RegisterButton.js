@@ -26,6 +26,7 @@ const RegisterButton = (props) => {
       .then((response) => response.json())
       .then((data) => {
         setPostId(data.id);
+        console.log(postId);
       });
   };
 
