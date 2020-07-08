@@ -2,9 +2,18 @@ import React, { useState, useEffect, useContext } from "react";
 import { ProgressContext } from "../../contexts/ProgressContext.js";
 
 const RegisterButton = (props) => {
-  const { firstName, lastName, email, job, city, resume, skills } = useContext(
-    ProgressContext
-  );
+  const {
+    firstName,
+    lastName,
+    email,
+    job,
+    city,
+    resume,
+    skills,
+    experience,
+    mentoringType,
+    meetingType,
+  } = useContext(ProgressContext);
 
   let [postId, setPostId] = useState("");
 
@@ -16,6 +25,9 @@ const RegisterButton = (props) => {
         firstName: firstName,
         lastName: lastName,
         jobTitle: job,
+        experience: experience,
+        meetingType: meetingType,
+        mentoringType,
         city: city,
         course: resume,
         competences: skills,
