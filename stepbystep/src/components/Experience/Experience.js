@@ -1,5 +1,5 @@
 import React from "react";
-import { ProfileContext } from "../../Contexts/ProfileContext";
+import { ProfileContext } from "../../contexts/ProfileContext";
 import { useContext } from "react";
 
 const Experience = (props) => {

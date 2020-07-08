@@ -3,7 +3,7 @@ import { ReactComponent as Webcam } from "./Assets/Webcam.svg";
 import { ReactComponent as WebcamGray } from "./Assets/WebcamGray.svg";
 import { ReactComponent as FaceToFace } from "./Assets/Facetoface.svg";
 import { ReactComponent as FaceToFaceGray } from "./Assets/FacetofaceGray.svg";
-import { ProfileContext } from "../../Contexts/ProfileContext";
+import { ProfileContext } from "../../contexts/ProfileContext";
 import { useContext } from "react";
 
 const MeetingType = (props) => {

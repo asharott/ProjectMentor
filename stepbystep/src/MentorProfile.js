@@ -10,9 +10,9 @@ import MeetingType from "./components/MeetingType/MeetingType";
 import Experience from "./components/Experience/Experience";
 import Opinion from "./components/Opinions/Opinions";
 import Contact from "./components/Contact/Contact";
-import ProfileContextProvider from "./Contexts/ProfileContext";
+import ProfileContextProvider from "./contexts/ProfileContext";
 
-function App() {
+function MentorProfile() {
   return (
     <div className="App">
       <ProfileContextProvider>
@@ -31,4 +31,4 @@ function App() {
   );
 }
 
-export default App;
+export default MentorProfile;

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Comment from "./Comment";
-import { ProfileContext } from "../../Contexts/ProfileContext";
+import { ProfileContext } from "../../contexts/ProfileContext";
 
 const Opinion = (props) => {
   const { commentAuthor, commentContent } = useContext(ProfileContext);

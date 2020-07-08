@@ -3,7 +3,7 @@ import { ReactComponent as GroupMentoring } from "./Assets/GroupMentoring.svg";
 import { ReactComponent as GroupMentoringGray } from "./Assets/GroupMentoringGray.svg";
 import { ReactComponent as SoloMentoringGray } from "./Assets/SoloMentoringGray.svg";
 import { ReactComponent as SoloMentoring } from "./Assets/SoloMentoring.svg";
-import { ProfileContext } from "../../Contexts/ProfileContext";
+import { ProfileContext } from "../../contexts/ProfileContext";
 import { useContext } from "react";
 
 const MentoringType = (props) => {

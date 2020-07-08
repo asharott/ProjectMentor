@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ProfileContext } from "../../Contexts/ProfileContext";
+import { ProfileContext } from "../../contexts/ProfileContext";
 
 
 const Resume = (props) => {

@@ -1,8 +1,8 @@
 import React, { useState, useContext } from "react";
-import { ProfileContext } from "../../Contexts/ProfileContext";
+import { ProfileContext } from "../../contexts/ProfileContext";
 
 const Contact = (props) => {
-  const {email} = useContext(ProfileContext);
+  const { email } = useContext(ProfileContext);
   var [expanded, toggleExpanded] = useState(false);
   const renderContact = () => {
     if (!expanded) {
@@ -24,7 +24,7 @@ const Contact = (props) => {
       return (
         <div className="contactSectionExpanded">
           <div className="contactMailContainer">
-          <p>{email}</p>
+            <p>{email}</p>
           </div>
           <div className="closeButtonContainer">
             <button

@@ -5,7 +5,7 @@ import { ReactComponent as Star2 } from "./Assets/2.svg";
 import { ReactComponent as Star3 } from "./Assets/3.svg";
 import { ReactComponent as Star4 } from "./Assets/4.svg";
 import { ReactComponent as Star5 } from "./Assets/5.svg";
-import { ProfileContext } from "../../Contexts/ProfileContext";
+import { ProfileContext } from "../../contexts/ProfileContext";
 
 const Infos = (props) => {
   const {note, firstName, lastName, jobTitle, city} = useContext(ProfileContext);
