@@ -4,7 +4,7 @@ import ProgressContextProvider from "./contexts/ProgressContext";
 import Header from "./components/Header/Header";
 import Content from "./components/Content/Content";
 
-function App() {
+function StepByStep() {
   return (
     <div className="App">
       <ProgressContextProvider>
@@ -15,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default StepByStep;
