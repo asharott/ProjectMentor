@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import NextButton from "../NextButton/NextButton";
 import { ProgressContext } from "../../contexts/ProgressContext";
 
 const Page2 = (props) => {
@@ -9,6 +8,7 @@ const Page2 = (props) => {
     tempSkills.push(event.target.innerText);
   };
   const checkSkill = (event) => {
+    console.log(tempSkills);
     if (tempSkills.indexOf(event.target.innerText) === -1) {
       handleSkills(event);
       event.target.style.backgroundColor = "#4f4f4f";
@@ -23,7 +23,7 @@ const Page2 = (props) => {
       <div className="pageTwoContent">
         <h2>Super un.e nouveau.elle {job} </h2>
         <h3>Optionnel : Ajoutez des compétences associées </h3>
-        <section className="skillsContainer">
+        <section className="sbsSkillsContainer">
           <div onClick={(event) => checkSkill(event)}>Figma</div>
           <div onClick={(event) => checkSkill(event)}>Atomic Design</div>
           <div onClick={(event) => checkSkill(event)}>Sketch</div>

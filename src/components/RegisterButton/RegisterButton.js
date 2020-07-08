@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ProgressContext } from "../../contexts/ProgressContext.js";
+import { BrowserRouter as Link } from "react-router-dom";
 
 const RegisterButton = (props) => {
   const {
@@ -44,13 +45,15 @@ const RegisterButton = (props) => {
 
   return (
     <div className="RegisterButtonContainer">
-      <button
-        onClick={() => sendRequest()}
-        type="submit"
-        className="RegisterButton"
-      >
-        S'inscrire
-      </button>
+      <a href="/MentorProfile">
+        <button
+          onClick={() => sendRequest()}
+          type="submit"
+          className="RegisterButton"
+        >
+          S'inscrire
+        </button>
+      </a>
     </div>
   );
 };

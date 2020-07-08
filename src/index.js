@@ -3,10 +3,20 @@ import ReactDOM from "react-dom";
 import StepByStep from "./StepByStep";
 import * as serviceWorker from "./serviceWorker";
 import MentorProfile from "./MentorProfile";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <StepByStep />
+    <Router>
+      <Switch>
+        <Route path="/MentorProfile">
+          <MentorProfile />
+        </Route>
+        <Route path="/">
+          <StepByStep />
+        </Route>
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );
