@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import { ProgressContext } from "../../contexts/ProgressContext.js";
 import { BrowserRouter as Link } from "react-router-dom";
 
@@ -14,9 +14,8 @@ const RegisterButton = (props) => {
     experience,
     mentoringType,
     meetingType,
+    setId,
   } = useContext(ProgressContext);
-
-  let [postId, setPostId] = useState("");
 
   const sendRequest = () => {
     const requestOptions = {
@@ -38,19 +37,14 @@ const RegisterButton = (props) => {
     fetch("http://localhost:8000/apip/posts", requestOptions)
       .then((response) => response.json())
       .then((data) => {
-        setPostId(data.id);
-        console.log(postId);
+        setId(data.id);
       });
   };
 
   return (
     <div className="RegisterButtonContainer">
       <a href="/MentorProfile">
-        <button
-          onClick={() => sendRequest()}
-          type="submit"
-          className="RegisterButton"
-        >
+        <button onClick={sendRequest} type="submit" className="RegisterButton">
           S'inscrire
         </button>
       </a>
