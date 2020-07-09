@@ -14,7 +14,6 @@ const RegisterButton = (props) => {
     experience,
     mentoringType,
     meetingType,
-    setId,
   } = useContext(ProgressContext);
 
   const sendRequest = () => {
@@ -34,20 +33,25 @@ const RegisterButton = (props) => {
         email: email,
       }),
     };
+
     fetch("http://localhost:8000/apip/posts", requestOptions)
       .then((response) => response.json())
       .then((data) => {
-        setId(data.id);
+        prompt(data.id, (document.location.href = "/MentorProfile"));
       });
   };
 
   return (
     <div className="RegisterButtonContainer">
-      <a href="/MentorProfile">
-        <button onClick={sendRequest} type="submit" className="RegisterButton">
-          S'inscrire
-        </button>
-      </a>
+      <button
+        onClick={() => {
+          sendRequest();
+        }}
+        type="submit"
+        className="RegisterButton"
+      >
+        S'inscrire
+      </button>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import StepByStep from "./StepByStep";
 import * as serviceWorker from "./serviceWorker";
@@ -9,7 +9,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        <Route path="/MentorProfile">
+        <Route path="/MentorProfile/">
           <MentorProfile />
         </Route>
         <Route path="/">
