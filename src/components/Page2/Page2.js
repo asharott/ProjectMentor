@@ -8,7 +8,6 @@ const Page2 = (props) => {
     tempSkills.push(event.target.innerText);
   };
   const checkSkill = (event) => {
-    console.log(tempSkills);
     if (tempSkills.indexOf(event.target.innerText) === -1) {
       handleSkills(event);
       event.target.style.backgroundColor = "#4f4f4f";

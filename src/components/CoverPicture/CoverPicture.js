@@ -1,13 +1,11 @@
 import React from "react";
-import CoverPic from "./Assets/Hinata.jpg";
+import CoverPic from "./Assets/Vincent.png";
 
 const CoverPicture = (props) => {
   return (
     <div>
       <div className="blank"></div>
-      <img className="coverPicture" src={CoverPic} alt='cover'>
-        
-      </img>
+      <img className="coverPicture" src={CoverPic} alt="cover"></img>
     </div>
   );
 };
