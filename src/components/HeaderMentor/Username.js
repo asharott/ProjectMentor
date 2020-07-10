@@ -3,7 +3,7 @@ import React from "react";
 const Username = (props) => {
   return (
     <div className="nameContainer">
-      <span>Nom</span>
+      <span>Meetor</span>
     </div>
   );
 };
